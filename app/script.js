@@ -8,7 +8,7 @@ let whatTodo = document.querySelector('input');
 let memory = [];
 
 addBtn.addEventListener('click', function(){
-    let text = whatTodo.value;
+    var text = whatTodo.value;
     if (text) {
         entryActions(text);
         storageAdd(text);
@@ -16,7 +16,7 @@ addBtn.addEventListener('click', function(){
 });
 
 document.addEventListener('keypress', function(e){
-    let text = whatTodo.value;
+    var text = whatTodo.value;
     if (e.keyCode = 13 && text) {
         entryActions(text);
         storageAdd(text);
@@ -35,7 +35,7 @@ function entryActions(text){
     removeBtn.addEventListener('click', removeEntry);
     
     
-function removeEntry(){
+    function removeEntry(){
         var child = this.parentNode;
 		var index = 0;
 
@@ -56,7 +56,7 @@ function removeEntry(){
             }
             localStorage.setItem("elements", memory);
         }
-}
+    }
 }
 
 function storageAdd(text) {

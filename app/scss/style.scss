@@ -1,8 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     margin: 0;
     background-color: #704F50;
     font-family: lato;
@@ -30,7 +33,7 @@ div.container {
     position: absolute;
     height: 75vh;
     width: 40vw;
-
+    min-width: 250px;
     z-index: 2;
     margin: 17vh 30vw;
 
@@ -38,7 +41,7 @@ div.container {
 
         position: relative;
         display: flex;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
 
 
         input {
@@ -49,8 +52,9 @@ div.container {
             border-radius: 50px;
             padding-left: 25px;
             padding-right: 25px;
-            min-width: 0;
+            min-width: 250px;
             font-family: lato;
+            font-size: 1rem;
         }
 
         button {
@@ -74,10 +78,16 @@ div.container {
 
 }
 
+#todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
 .div-element {
     width: 100%;
     min-height: 5vh;
-    width: 38vw;
     background-color: #F9F0AF;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -85,6 +95,9 @@ div.container {
     display: flex;
     align-items: center;
     padding-left: 25px;
+    min-width: 250px;
+    margin-right: 0;
+    overflow: hidden;
 }
 
 .remove {
