@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     background-color: #704F50;
+    font-family: lato;
 }
 
 div.header {
@@ -37,7 +38,7 @@ div.container {
 
         position: relative;
         display: flex;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
 
         input {
@@ -73,8 +74,30 @@ div.container {
 
 }
 
-.list-element {
+.div-element {
     width: 100%;
-    height: 5vh;
+    min-height: 5vh;
+    width: 38vw;
     background-color: #F9F0AF;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+}
+
+svg {
+    width: 20px;
+    height: 28px;
 }
