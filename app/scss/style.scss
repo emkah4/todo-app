@@ -26,7 +26,6 @@ div.header {
     }
 }
 
-
 div.container {
     display: flex;
     flex-direction: column;
@@ -68,6 +67,7 @@ div.container {
             border: 2px solid rgba(191, 191, 191, 0.2);
             font-size: 2rem;
             font-weight: 700;
+            cursor: pointer;
 
             &:hover {
                 background-color: darken($color: #f0a979, $amount: 9);
@@ -98,6 +98,7 @@ div.container {
     min-width: 250px;
     margin-right: 0;
     overflow: hidden;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
 }
 
 .remove {

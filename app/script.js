@@ -15,15 +15,6 @@ addBtn.addEventListener('click', function(){
     }
 });
 
-document.addEventListener('keypress', function(e){
-    var text = whatTodo.value;
-    if (e.keyCode = 13 && text) {
-        entryActions(text);
-        storageAdd(text);
-    }
-});
-
-
 function entryActions(text){
     let listElement = document.createElement("div");
     listElement.classList.add('div-element');
