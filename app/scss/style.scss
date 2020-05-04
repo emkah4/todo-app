@@ -29,12 +29,13 @@ div.header {
 div.container {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 75vh;
+    position: relative;
+    top: -21px;
+    
     width: 40vw;
     min-width: 250px;
     z-index: 2;
-    margin: 17vh 30vw;
+    margin: 0 auto;
 
     .input-container {
 
@@ -42,10 +43,9 @@ div.container {
         display: flex;
         margin-bottom: 25px;
 
-
         input {
             width: 40vw;
-            height: 6vh;
+            min-height: 6vh;
             background-color: rgb(238, 229, 164);
             border: none;
             border-radius: 50px;
@@ -109,6 +109,7 @@ div.container {
     right: 0;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 svg {
